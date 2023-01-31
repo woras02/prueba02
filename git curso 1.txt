@@ -1,9 +1,26 @@
- ctl + l  = limpiar git
+ssh-keygen -t ed25519 -C "tygos73@gmail.com" /rsa-b 4096  / ssh clave
+ 
+ctl + l  = limpiar git
  git config --help
             --global
-prueba 1
-------------------
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Generar una nueva llave SSH: (Cualquier sistema operativo)
+
+Comprobar proceso y agregarlo (Windows)
+
+eval $(ssh-agent -s) // verificar si esta activo
+
+ssh-add ~/.ssh/id_rsa // para activar la clave
+cd ~/.ssh/
+
+Comprobar proceso y agregarlo (Mac)
+
+eval "$(ssh-agent -s)"
+
+
+------------------
+git config -l para ver la congifuracion
 git pull --rebase origin master
 git remote --verbose
 git remote add origin git@github.com:woras02/prueba.git -- ejemplo
