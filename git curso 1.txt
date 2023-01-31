@@ -20,6 +20,8 @@ eval "$(ssh-agent -s)"
 
 
 ------------------
+git pull origin main // traer todo que este github
+git remote set-url origin // para cambiar origin git@github.com:woras02/prueba02.git
 git config -l para ver la congifuracion
 git pull --rebase origin master
 git remote --verbose
