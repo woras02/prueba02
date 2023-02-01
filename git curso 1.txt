@@ -17,9 +17,23 @@ cd ~/.ssh/
 Comprobar proceso y agregarlo (Mac)
 
 eval "$(ssh-agent -s)"
+------------------------------------------------
+mi git alias 
 
-
-------------------
+push = git push origin main 
+st = status
+historia = git log --all --graph --decorate --oneline
+-------------------------------------------------------
+git push origin :refs/tags/nombretag // para eliminar tag github
+git tag -d nombretag //eliminar tag
+git push origin --tags // enviar los tags
+history // ver historia
+git  show-ref --tag // para ver con que esta conectado tag
+git tag // para ver tag
+git tag -a /vo.1 -m"nombre" ea3d19d //enviar tag a githu
+git config --global --unset alias.NombreDelAliasQueQuieresBorrar
+git config --global alias // crear alias
+git log --all --graph --decorate --oneline // para ver la historia
 git pull origin main // traer todo que este github
 git remote set-url origin // para cambiar origin git@github.com:woras02/prueba02.git
 git config -l para ver la congifuracion
@@ -33,11 +47,11 @@ git add .     agregar todos los archivoz de esa carperta
 git commit -m  agregar texto
 git commit -am  agregar todo los cambios solo cambios
 git checkout   borrar cambios
-git rm  para quitarlo cuando lo agadimos
-checkout -f borrar todos los cambios 
-git show
-cat para ver el contenido
-git log para ver todos los cambios , historial
+git rm  //para quitarlo cuando lo añadidos
+checkout -f// borrar todos los cambios 
+git show //
+cat //para ver el contenido
+git log // para ver todos los cambios , historial
 git reset --hard para cambiar de version " peligroso pero comun "
 git reset --soft cambio de version no tan peligroso limitado
 ls para ver todo
