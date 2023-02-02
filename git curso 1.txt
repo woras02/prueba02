@@ -18,7 +18,7 @@ Comprobar proceso y agregarlo (Mac)
 
 eval "$(ssh-agent -s)"
 ------------------------------------------------
-mi git alias 
+mi git alias // git config --global alias.pushh "push origin main"
 
 push = git push origin main 
 st = status
